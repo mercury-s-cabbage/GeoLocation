@@ -23,8 +23,8 @@ class MainActivity : AppCompatActivity(), LocationListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        statusTextView = findViewById(R.id.status)  // Добавьте TextView в макет для статуса (Online/Offline)
-        providersTextView = findViewById(R.id.providers)  // TextView для списка провайдеров
+        statusTextView = findViewById(R.id.status)
+        providersTextView = findViewById(R.id.providers)
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
 
         findViewById<Button>(R.id.updButton).setOnClickListener {
